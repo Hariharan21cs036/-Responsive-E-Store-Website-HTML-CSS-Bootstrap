@@ -24,7 +24,9 @@ This project demonstrates a modern shopping website layout with product listings
 ## 📸 Screenshots
 
 ### Homepage
-![Homepage Screenshot](./screenshots/homepage.png)
+<img width="1358" height="637" alt="image" src="https://github.com/user-attachments/assets/1cc4e0aa-db90-44ad-8e8d-e9b5f54f8542" />
+
 
 ### Products Page
-![Products Screenshot](./screenshots/products.png)
+<img width="1355" height="624" alt="image" src="https://github.com/user-attachments/assets/e34741cf-5277-44fb-afa2-9ab53f5922a0" />
+
