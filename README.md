@@ -19,3 +19,12 @@ This project demonstrates a modern shopping website layout with product listings
 - **HTML5** – Semantic structure  
 - **CSS3** – Custom styling  
 - **Bootstrap 5** – Responsive grid & components  
+
+
+## 📸 Screenshots
+
+### Homepage
+![Homepage Screenshot](./screenshots/homepage.png)
+
+### Products Page
+![Products Screenshot](./screenshots/products.png)
