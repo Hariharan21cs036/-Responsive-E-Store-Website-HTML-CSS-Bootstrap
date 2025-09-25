@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <header style="background-color: #023b6d;">
+        <div class="headnmae text-center text-light fs-5 fw-medium">eStore.com</div>
+    </header>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- sitename -->
+                <div class="col-lg-3">
+                    <h1 class="sitename">eStore</h1>
+                </div>
+                <!-- search form -->
+                <div class="col-lg-6">
+                    <form
+                        class="Search-form w-75 mx-auto position-relative border-light-subtle d-none d-sm-none d-md-block d-lg-block ">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3 rounded-5 shadow-sm h-25 " id="inp"
+                                placeholder="Search for products">
+                            <button
+                                class="Search-btn p-2 text-bg-primary rounded-pill position-absolute top-50 end-0 translate-middle-y border-0 mx-2 "
+                                type="submit">
+                                <i class="bi bi-search "></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- end form -->
+
+                <!-- head icons -->
+                <div class="col-lg-3 nav-icons">
+                    <div class="head-icons d-flex justify-content-end p-4">
+                        <div class="account">
+                            <button class="person-icon">
+                                <i class="bi bi-person"></i>
+                            </button>
+                        </div>
+
+                        <!-- wishlist -->
+                        <div class="wishlist">
+                            <button class="heart-icon">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <!-- cart -->
+                        <div class="cart">
+                            <button class="cart-icon">
+                                <i class="bi bi-cart"></i>
+                            </button>
+                        </div>
+
+                        <!--menu bars -->
+                        <div class="bars d-lg-none d-md-block d-sm-block">
+                            <button class="bars-icon">
+                                <i class="bi bi-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- begin of navbars  -->
+        <div
+            class="container-fluid bg-white p-2 border border-dark-light-subtle d-none d-sm-none d-md-block d-lg-block">
+            <div class="container">
+                <ul class="nav">
+                    <li id="nav-ite">
+                        <a class="nav-link active fs-6 text fw-medium" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 text text-dark fw-medium" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 text text-dark fw-medium" href="#">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 text text-dark fw-medium" href="#">Product Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 text text-dark fw-medium" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 text text-dark fw-medium" href="#">Check Out</a>
+                    </li>
+
+                    <!-- dropdown menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark fw-medium" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Dropdoewn 1</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdoewn 2</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdoewn 3</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- megamenu 1 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark fw-medium" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-expanded="false">Megamenu 1</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Megamenu 1</a></li>
+                            <li><a class="dropdown-item" href="#">Megamenu 2</a></li>
+                            <li><a class="dropdown-item" href="#">Megamenu 3</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- megamenu 2 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark fw-medium" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-expanded="false">Megamenu 2</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Megamenu 1</a></li>
+                            <li><a class="dropdown-item" href="#">Megamenu 2</a></li>
+                            <li><a class="dropdown-item" href="#">Megamenu 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 text text-dark fw-medium" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- main Section 1 -->
+        <section class="container-fluid">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6 align-items-center">
+                        <div class="content mt-5">
+                            <p class=" shadow-sm border border-2 rounded-pill fw-bolder " id="new-coll">New Collection
+                                2025</p>
+                        </div>
+                        <h1 class="boldcontent pt-3 opacity-75" id="boldcontent1">Discover Stylish <span
+                                class="text-primary"><u id="fash">Fashion</u></span> For Every Season</h1>
+                        <p class="py-3 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nostrum qui
+                            id
+                            cum ipsa
+                            ratione soluta. Non saepe nemo ullam commodi impedit optio, dicta laboriosam in deserunt
+                            voluptas ea voluptatum.
+                        </p>
+                        <!-- shop and view buttons -->
+                        <div class="d-grid d-md-block gap-2">
+                            <button class="btn btn-primary rounded-2 p-2 fw-bold text-center me-3" type="button">Shop
+                                Now
+                                <i class="bi bi-arrow-right fw-medium fs-6 text-center"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary p-2 fw-bold text-dark" type="button">View
+                                Collection</button>
+                        </div>
+                        <!-- Features free shopping etc -->
+                        <div class="features d-flex gap-3 align-items-center py-5">
+                            <div class="feature-item">
+                                <i class="bi bi-truck p-2 text-primary"></i><span id="features-content">Free
+                                    Shipping</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="bi bi-shield-check p-2 text-primary"></i><span id="features-content">Secure
+                                    Payment</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="bi bi-arrow-repeat p-2 text-primary"></i><span id="features-content">Easy
+                                    Returns</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 position-relative img1">
+                        <div class="features_img">
+                            <img src=".//imgaes/feautersimg.webp" class="img-fluid" alt="...">
+                        </div>
+                        <div class="features_img1 position-absolute gap-2 p-1 rounded-4 top-0 start-0  ">
+                            <img src=".//imgaes/fea-img-1.webp" class="img-thumbnail" id="hoodie" alt="...">
+                            <p class="p-1 text-secondary fw-semibold my-2 text-center">Summer Collection</p>
+                            <p class="text-primary fw-semibold " id="hoodienum">$89.99</p>
+                        </div>
+                        <div class="features_img2 position-absolute gap-2 p-1 rounded-4 bottom-0  end-0 ">
+                            <img src=".//imgaes/fea-img-2.webp" class="img-thumbnail" id="glass" alt="...">
+                            <p class="p-1 text-secondary fw-semibold my-2 text-center">Casual Wear</p>
+                            <p class="text-primary fw-semibold " id="glassnum">$59.99</p>
+
+                        </div>
+                        <div
+                            class="features_img3 rounded-circle fs-5 fw-bold text-light text-bg-primary text-center p-2 mt-1 position-absolute">
+                            <p class="off_para">30% <br> OFF</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of sec1 -->
+
+        <!-- begin of section 2 -->
+        <div class="contaniee-fuid bg-body-secondary mt-5">
+            <div class="cointain p-5 ">
+                <div class="row text-center">
+                    <div class="col-lg-3">
+                        <i class="bi bi-truck p-2 text-dark fs-1"></i>
+                        <h3 class="fw-medium fs-6 text-secondary-emphasis pt-3">Free Shipping</h3>
+                        <p class="text-secondary-emphasis pt-2 fw-normal">Nulla sit morbi vestibulum eros duis amet,
+                            consectetur vitae lacus. Ut quis tempor felis sed
+                            nunc viverra.</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <i class="bi bi-piggy-bank p-2 text-dark fs-1"></i>
+                        <h3 class="fw-medium fs-6 text-dark pt-3">Money Back Guarantee</h3>
+                        <p class="text-secondary-emphasis pt-2 fw-normal">Nullam gravida felis ac nunc tincidunt, sed
+                            malesuada justo pulvinar. Vestibulum nec diam
+                            vitae eros.</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <i class="bi bi-percent p-2 text-dark fs-1"></i>
+                        <h3 class="fw-medium fs-6 text-dark pt-3">Discount Offers</h3>
+                        <p class="text-secondary-emphasis pt-2 fw-normal">Nulla ipsum nisi vel adipiscing amet,
+                            dignissim consectetur ornare. Vestibulum quis posuere
+                            elit auctor.</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <i class="bi bi-headset p-2 text-dark fs-1"></i>
+                        <h3 class="fw-medium fs-6 text-dark pt-3">24/7 Support</h3>
+                        <p class="text-secondary-emphasis pt-2 fw-normal">Ipsum dolor amet sit consectetur adipiscing,
+                            nullam vitae euismod tempor nunc felis
+                            vestibulum ornare.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- begin -->
+        <!-- caurosal items -->
+        <div class="container py-5 ">
+            <div id="smartCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-inner ">
+
+                    <!-- ✅ Slide 1: Cards 1–6 -->
+                    <div class="carousel-item active ">
+                        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 row-cols-lg-6">
+                            <div class="col">
+                                <div class="product-card"><img src=".//imgaes/card1.webp">
+                                    <h6>Product 1</h6>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-card"><img src=".//imgaes/card2.jpg">
+                                    <h6>Product 2</h6>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-card"><img src=".//imgaes/card3.webp">
+                                    <h6>Product 3</h6>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-card"><img src=".//imgaes/card7.jpg">
+                                    <h6>Product 4</h6>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-card"><img src=".//imgaes/card5.webp">
+                                    <h6>Product 5</h6>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-card"><img src=".//imgaes/card6.jpg">
+                                    <h6>Product 6</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ✅ Slide 2: New (7, 8) + Reuse (1–4) -->
+                    <div class="carousel-item">
+                        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 row-cols-lg-6">
+                            <!-- NEW Products -->
+                            <div class="col">
+                                <div class="product-card"><img src=".//imgaes/card7.jpg">
+                                    <h6>Product 7</h6>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-card"><img src=".//imgaes/card8.jpg">
+                                    <h6>Product 8</h6>
+                                </div>
+                            </div>
+
+                            <!-- Reused Products from Slide 1 -->
+                            <div class="col">
+                                <div class="product-card"><img src=".//imgaes/card1.webp">
+                                    <h6>Product 1</h6>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-card"><img src=".//imgaes/card2.jpg">
+                                    <h6>Product 2</h6>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-card"><img src="./imgaes/card3.webp">
+                                    <h6>Product 3</h6>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-card"><img src="./imgaes/card4.webp">
+                                    <h6>Product 4</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev rounded-pill " type="button" data-bs-target="#smartCarousel"
+                    data-bs-slide="prev">
+                    <i class="bi bi-chevron-left text-dark fw-bold fs-4"></i>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next rounded-pill" type="button" data-bs-target="#smartCarousel"
+                    data-bs-slide="next">
+                    <i class="bi bi-chevron-right text-dark fw-bold fs-4"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- end of caurosal items-->
+
+        <!-- begin of section 3 best sellers-->
+        <section class="container-fluid py-5">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="fs-1 fw-bold text-dark">Best Sellers</p>
+                        <p class="fs-5 fw-normal">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+                            consectetur velit</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card item for sec3 -->
+            <!-- card 1 bag -->
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card position-relative  border-0 shadow-sm">
+                            <button
+                                class="like-btn p-2 rounded-pill position-absolute top-0 end-0 border-0 mx-2 py-2 my-2 p-3 "
+                                type="button">
+                                <i class="bi bi-heart "></i>
+                            </button>
+                            <img src=".//imgaes/product-1.webp" class="card-img-top text-bg-light" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-medium">Hand Bag</h5>
+                                <p class="card-text fw-bold text-dark fs-6 mt-3">$89.99</p>
+                                <div class="star-rating text-warning fs-6 fw-medium ">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i><span
+                                        class="text-light-emphasis opacity-75 mx-2 fw-lighter fs-6">(42)</span>
+                                </div>
+
+                                <!-- add to cart btn 1 -->
+                                <button type="button" class="cart-btn btn-lg text-light border-0 w-100 mt-3 rounded-2 ">
+                                    <i class="bi bi-cart fs-6"></i> <span class="fs-6 fw-medium">Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 hoodie -->
+                    <div class="col">
+                        <div class="card position-relative  border-0 shadow-sm">
+                            <button
+                                class="like-btn p-2 rounded-pill position-absolute top-0 end-0 border-0 mx-2 py-2 my-2 p-3 "
+                                type="button">
+                                <i class="bi bi-heart "></i>
+                            </button>
+                            <img src="./imgaes/fea-img-1.webp" class="card-img-top text-bg-light" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-medium">Hoodie</h5>
+                                <p class="card-text fw-bold text-dark fs-6 mt-3">$64.99 <span><s
+                                            class="fw-lighter fs-6 opacity-75">$79.99</s></span></p>
+                                <div class="star-rating text-warning fs-6 fw-medium ">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i><span
+                                        class="text-light-emphasis opacity-75 mx-2 fw-lighter fs-6">(28)</span>
+
+                                    <!-- add to cart btn 2 -->
+                                    <button type="button"
+                                        class="cart-btn btn-lg text-light border-0 w-100 mt-3 rounded-2 ">
+                                        <i class="bi bi-cart fs-6"></i> <span class="fs-6 fw-medium">Add to Cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 jacket -->
+                    <div class="col">
+                        <div class="card position-relative  border-0 shadow-sm">
+                            <button
+                                class="like-btn p-2 rounded-pill position-absolute top-0 end-0 border-0 mx-2 py-2 my-2 p-3 "
+                                type="button">
+                                <i class="bi bi-heart "></i>
+                            </button>
+                            <img src="./imgaes/product-3.webp" class="card-img-top text-bg-light" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-medium">Jean Jacket</h5>
+                                <p class="card-text fw-bold text-dark fs-6 mt-3">$119.00</p>
+                                <div class="star-rating text-warning fs-6 fw-medium ">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i><span
+                                        class="text-light-emphasis opacity-75 mx-2 fw-lighter fs-6">(52)</span>
+
+                                    <!-- add to cart btn 3 -->
+                                    <button type="button"
+                                        class="cart-btn btn-lg text-light border-0 w-100 mt-3 rounded-2 ">
+                                        <i class="bi bi-cart fs-6"></i> <span class="fs-6 fw-medium">Add to Cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 shoe -->
+                    <div class="col">
+                        <div class="card position-relative  border-0 shadow-sm">
+                            <button
+                                class="like-btn p-2 rounded-pill position-absolute top-0 end-0 border-0 mx-2 py-2 my-2 p-3 "
+                                type="button">
+                                <i class="bi bi-heart "></i>
+                            </button>
+                            <img src="./imgaes/product-4.webp" class="card-img-top  text-bg-light" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-medium">Shoe</h5>
+                                <p class="card-text fw-bold text-dark fs-6 mt-3">$75.50</p>
+                                <div class="star-rating text-warning fs-6 fw-medium ">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i><span
+                                        class="text-light-emphasis opacity-75 mx-2 fw-lighter fs-6">(47)</span>
+
+                                    <!-- add to cart btn 4 -->
+                                    <button type="button"
+                                        class="cart-btn btn-lg text-light border-0 w-100 mt-3 rounded-2 ">
+                                        <i class="bi bi-cart fs-6"></i> <span class="fs-6 fw-medium">Add to Cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of sec 3 -->
+
+        <!-- section 4 start  -->
+        <!-- fillter  -->
+        <section class="container-fluid">
+            <div class="container py-5 ">
+                <div class="row ms-3">
+                    <div class="col-lg-12 p-3 d-flex align-items-center justify-content-center gap-2 ">
+                        <button type="button"
+                            class="btnsec4 text-light p-2 border-0 fs-6 rounded-pill fw-bold">All</button>
+                        <button type="button"
+                            class="btn-sec4  rounded-pill p-2 fw-bolder text-dark border-0">Clothing</button>
+                        <button type="button"
+                            class="btn-sec4  rounded-pill p-2 fw-bolder text-dark border-0">Accessories</button>
+                        <button type="button"
+                            class="btn-sec4  rounded-pill p-2 fw-bolder text-dark border-0">Electronics</button>
+                    </div>
+                </div>
+            </div>
+            <!-- end of fillters -->
+
+            <!-- card item for sec4 1 st row and column -->
+            <!-- card 1 white shrt -->
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card position-relative  border-0 shadow-sm">
+                            <button
+                                class="like-btn p-2 rounded-pill position-absolute top-0 end-0 border-0 mx-2 py-2 my-2 p-3 "
+                                type="button">
+                                <i class="bi bi-heart "></i>
+                            </button>
+                            <img src=".//imgaes/card1.webp" class="card-img-top text-bg-light" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-medium">White Shirt</h5>
+                                <p class="card-text fw-bold text-dark fs-6 mt-3">$80.99</p>
+                                <div class="star-rating text-warning fs-6 fw-medium ">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i><span
+                                        class="text-light-emphasis opacity-75 mx-2 fw-lighter fs-6">(32)</span>
+                                </div>
+
+                                <!-- add to cart btn 1 -->
+                                <button type="button" class="cart-btn btn-lg text-light border-0 w-100 mt-3 rounded-2 ">
+                                    <i class="bi bi-cart fs-6"></i> <span class="fs-6 fw-medium">Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 chair -->
+                    <div class="col">
+                        <div class="card position-relative  border-0 shadow-sm">
+                            <button
+                                class="like-btn p-2 rounded-pill position-absolute top-0 end-0 border-0 mx-2 py-2 my-2 p-3 "
+                                type="button">
+                                <i class="bi bi-heart "></i>
+                            </button>
+                            <img src="./imgaes/card5.webp" class="card-img-top text-bg-light" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-medium">Chair</h5>
+                                <p class="card-text fw-bold text-dark fs-6 mt-3">$44.99 <span><s
+                                            class="fw-lighter fs-6 opacity-75">$59.99</s></span></p>
+                                <div class="star-rating text-warning fs-6 fw-medium ">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i><span
+                                        class="text-light-emphasis opacity-75 mx-2 fw-lighter fs-6">(28)</span>
+
+                                    <!-- add to cart btn 2 -->
+                                    <button type="button"
+                                        class="cart-btn btn-lg text-light border-0 w-100 mt-3 rounded-2 ">
+                                        <i class="bi bi-cart fs-6"></i> <span class="fs-6 fw-medium">Add to Cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 jacket -->
+                    <div class="col">
+                        <div class="card position-relative  border-0 shadow-sm">
+                            <button
+                                class="like-btn p-2 rounded-pill position-absolute top-0 end-0 border-0 mx-2 py-2 my-2 p-3 "
+                                type="button">
+                                <i class="bi bi-heart "></i>
+                            </button>
+                            <img src="./imgaes/product-3.webp" class="card-img-top text-bg-light" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-medium">Jean Jacket</h5>
+                                <p class="card-text fw-bold text-dark fs-6 mt-3">$119.00</p>
+                                <div class="star-rating text-warning fs-6 fw-medium ">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i><span
+                                        class="text-light-emphasis opacity-75 mx-2 fw-lighter fs-6">(52)</span>
+
+                                    <!-- add to cart btn 3 -->
+                                    <button type="button"
+                                        class="cart-btn btn-lg text-light border-0 w-100 mt-3 rounded-2 ">
+                                        <i class="bi bi-cart fs-6"></i> <span class="fs-6 fw-medium">Add to Cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 shoe -->
+                    <div class="col">
+                        <div class="card position-relative  border-0 shadow-sm">
+                            <button
+                                class="like-btn p-2 rounded-pill position-absolute top-0 end-0 border-0 mx-2 py-2 my-2 p-3 "
+                                type="button">
+                                <i class="bi bi-heart "></i>
+                            </button>
+                            <img src="./imgaes/product-4.webp" class="card-img-top  text-bg-light" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-medium">Shoe</h5>
+                                <p class="card-text fw-bold text-dark fs-6 mt-3">$75.50</p>
+                                <div class="star-rating text-warning fs-6 fw-medium ">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i><span
+                                        class="text-light-emphasis opacity-75 mx-2 fw-lighter fs-6">(47)</span>
+
+                                    <!-- add to cart btn 4 -->
+                                    <button type="button"
+                                        class="cart-btn btn-lg text-light border-0 w-100 mt-3 rounded-2 ">
+                                        <i class="bi bi-cart fs-6"></i> <span class="fs-6 fw-medium">Add to Cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card item for sec4 for 2nd row and colm -->
+            <!-- card 1 bag -->
+            <div class="container py-5">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card position-relative  border-0 shadow-sm">
+                            <button
+                                class="like-btn p-2 rounded-pill position-absolute top-0 end-0 border-0 mx-2 py-2 my-2 p-3 "
+                                type="button">
+                                <i class="bi bi-heart "></i>
+                            </button>
+                            <img src=".//imgaes/product-1.webp" class="card-img-top text-bg-light" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-medium">Hand Bag</h5>
+                                <p class="card-text fw-bold text-dark fs-6 mt-3">$89.99</p>
+                                <div class="star-rating text-warning fs-6 fw-medium ">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i><span
+                                        class="text-light-emphasis opacity-75 mx-2 fw-lighter fs-6">(42)</span>
+                                </div>
+
+                                <!-- add to cart btn 1 -->
+                                <button type="button" class="cart-btn btn-lg text-light border-0 w-100 mt-3 rounded-2 ">
+                                    <i class="bi bi-cart fs-6"></i> <span class="fs-6 fw-medium">Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 hoodie -->
+                    <div class="col">
+                        <div class="card position-relative  border-0 shadow-sm">
+                            <button
+                                class="like-btn p-2 rounded-pill position-absolute top-0 end-0 border-0 mx-2 py-2 my-2 p-3 "
+                                type="button">
+                                <i class="bi bi-heart "></i>
+                            </button>
+                            <img src="./imgaes/fea-img-1.webp" class="card-img-top text-bg-light" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-medium">Hoodie</h5>
+                                <p class="card-text fw-bold text-dark fs-6 mt-3">$64.99 <span><s
+                                            class="fw-lighter fs-6 opacity-75">$79.99</s></span></p>
+                                <div class="star-rating text-warning fs-6 fw-medium ">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i><span
+                                        class="text-light-emphasis opacity-75 mx-2 fw-lighter fs-6">(28)</span>
+
+                                    <!-- add to cart btn 2 -->
+                                    <button type="button"
+                                        class="cart-btn btn-lg text-light border-0 w-100 mt-3 rounded-2 ">
+                                        <i class="bi bi-cart fs-6"></i> <span class="fs-6 fw-medium">Add to Cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 glass -->
+                    <div class="col">
+                        <div class="card position-relative  border-0 shadow-sm">
+                            <button
+                                class="like-btn p-2 rounded-pill position-absolute top-0 end-0 border-0 mx-2 py-2 my-2 p-3 "
+                                type="button">
+                                <i class="bi bi-heart "></i>
+                            </button>
+                            <img src="./imgaes/fea-img-2.webp" class="card-img-top text-bg-light" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-medium">Glass</h5>
+                                <p class="card-text fw-bold text-dark fs-6 mt-3">$119.00</p>
+                                <div class="star-rating text-warning fs-6 fw-medium ">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i><span
+                                        class="text-light-emphasis opacity-75 mx-2 fw-lighter fs-6">(52)</span>
+
+                                    <!-- add to cart btn 3 -->
+                                    <button type="button"
+                                        class="cart-btn btn-lg text-light border-0 w-100 mt-3 rounded-2 ">
+                                        <i class="bi bi-cart fs-6"></i> <span class="fs-6 fw-medium">Add to Cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 bag -->
+                    <div class="col">
+                        <div class="card position-relative  border-0 shadow-sm">
+                            <button
+                                class="like-btn p-2 rounded-pill position-absolute top-0 end-0 border-0 mx-2 py-2 my-2 p-3 "
+                                type="button">
+                                <i class="bi bi-heart "></i>
+                            </button>
+                            <img src="./imgaes/product-9.webp" class="card-img-top  text-bg-light" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-medium">Bag</h5>
+                                <p class="card-text fw-bold text-dark fs-6 mt-3">$35.50</p>
+                                <div class="star-rating text-warning fs-6 fw-medium ">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i><span
+                                        class="text-light-emphasis opacity-75 mx-2 fw-lighter fs-6">(47)</span>
+
+                                    <!-- add to cart btn 4 -->
+                                    <button type="button"
+                                        class="cart-btn btn-lg text-light border-0 w-100 mt-3 rounded-2 ">
+                                        <i class="bi bi-cart fs-6"></i> <span class="fs-6 fw-medium">Add to Cart</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- view all produts  -->
+            <div class="container align-items-center justify-content-center d-flex py-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <button class="btn btn-primary rounded-pill p-3 fw-bold text-center me-3" type="button">View All
+                            Products
+                            <i class="bi bi-arrow-right fw-semibold fs-6 text-center"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- end of sec 4 -->
+        </section>
+
+        <!-- section 5 start -->
+        <section class="container-fluid bg-body-secondary">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="pt-5 fw-bold text-dark">Join Our Newsletter</h2>
+                        <p class=" pt-3">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+                        </p>
+                    </div>
+                </div>
+                <form class="Search-form w-50 mx-auto position-relative border-light-subtle pt-2 pb-5 d-none d-lg-block d-md-block ">
+                    <div class="input-group">
+                        <input type="text" class="form-control p-3 rounded-5 shadow-sm  opacity-75" id="inp"
+                            placeholder="Enter Your Email">
+                        <button
+                            class="Sub-btn h-75 rounded-pill position-absolute top-50 end-0 translate-middle-y border-0 mx-2  "
+                            type="submit">
+                            <p class="text-center p-1 text-light fw-bold  ">Subscribe</p>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- End of sec5 -->
+
+        <!-- Start of Footer1 -->
+        <footer class="container-fluid">
+            <div class="container py-5">
+                <div class="row row-cols-md-3 row-cols-1">
+                    <div class="col-lg-3">
+                        <h2 class="mb-5">eStore</h2>
+                        <p class="fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nibh
+                            vehicula, facilisis
+                            magna ut, consectetur lorem.</p>
+                        <div class="contact-info">
+                            <div class="contact-item ">
+                                <i class="bi bi-geo-alt text-primary p-2 fs-5"></i><span class="fw-lighter ">123 Fashion
+                                    Street, New York, NY 10001</span>
+                            </div>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-item mt-3 ">
+                                <i class="bi bi-telephone text-primary p-2 fs-5 "></i><span class="fw-lighter">+1 (555)
+                                    123-4567</span>
+                            </div>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-item mt-3">
+                                <i class="bi bi-envelope p-2 text-primary fs-5"></i><span
+                                    class="fw-lighter">eStore@example.com</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="mb-4">Shop</h5>
+                        <p><a class="foot-content link-opacity-75" href="#">New Arrivals </a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Bestsellers</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Women's Clothing</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Men's Clothing</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Accessories</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Sale</a></p>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="mb-4">Support</h5>
+                        <p><a class="foot-content link-opacity-75" href="#">Help Center</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Order Status</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Shipping Info</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Returns & Exchanges</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Size Guide</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Contact Us</a></p>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="mb-4">Company</h5>
+                        <p><a class="foot-content link-opacity-75" href="#">About Us</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Careers</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Press</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Affiliates</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Responsibility</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Investors</a></p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="mb-4">Download Our App</h5>
+                        <p>Shop on the go with our mobile app</p>
+                        <!-- foot buttons -->
+                        <div class="foot-btn py-2 ">
+                            <button type="button" class="foot-btn1 border-0 rounded-3 p-2 fs-6 fw-semibold"><i
+                                    class="bi bi-apple p-2 fw-bold"></i>App Store</button>
+                            <button type="button" class="foot-btn2 border-0 rounded-3 p-2 fs-6 fw-semibold ms-2"><i
+                                    class="bi bi-google-play p-2 fw-bold"></i>Play Store</button>
+                        </div>
+                        <!-- end -->
+                        <p class="pt-3">Follow us</p>
+                        <div class="follow-icons">
+                            <button type="button" class="foot-btn1 border-0 rounded-pill p-2 fs-6 fw-semibold"><i
+                                    class="bi bi-facebook p-2 fw-bold"></i></button>
+                            <button type="button" class="foot-btn1 border-0 rounded-pill p-2 fs-6 fw-semibold"><i
+                                    class="bi bi-instagram p-2 fw-bold"></i></button>
+                            <button type="button" class="foot-btn1 border-0 rounded-pill p-2 fs-6 fw-semibold"><i
+                                    class="bi bi-twitter-x p-2 fw-bold"></i></button>
+                            <button type="button" class="foot-btn1 border-0 rounded-pill p-2 fs-6 fw-semibold"><i
+                                    class="bi bi-pinterest p-2 fw-bold"></i></button>
+                            <button type="button" class="foot-btn1 border-0 rounded-pill p-2 fs-6 fw-semibold"><i
+                                    class="bi bi-youtube p-2 fw-bold"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer1 -->
+
+        <!-- footer 2 start -->
+        <footer class="container-fluid bg-body-secondary">
+            <div class="contanier py-3">
+                <div class="row">
+                    <div class="accept-payments col-lg-12 d-flex align-items-center justify-content-center gap-2">
+                        <span class="fw-semibold fs-6">We Accept:</span>
+                        <div class="payment-items opacity-75">
+                            <i class="payment-icons bi bi-credit-card p-1 fs-4"></i>
+                            <i class="payment-icons bi bi-paypal p-1 fs-4" aria-label="PayPal"></i>
+                            <i class="payment-icons bi bi-apple p-1 fs-4" aria-label="Apple Pay"></i>
+                            <i class="payment-icons bi bi-google p-1 fs-4" aria-label="Google Pay"></i>
+                            <i class="payment-icons bi bi-shop p-1 fs-4" aria-label="Shop Pay"></i>
+                            <i class="payment-icons bi bi-cash p-1 fs-4" aria-label="Cash on Delivery"></i>
+                        </div>
+                    </div>
+                    <!-- temrs &conditions -->
+                    <div class="terms d-flex align-items-center justify-content-center pt-3">
+                        <p><a class="foot-content me-5" href="#">Terms of Service</a></p>
+                        <p><a class="foot-content link-opacity-75" href="#">Privacy Policy</a></p>
+                        <p><a class="foot-content link-opacity-75 ms-5" href="#">Cookies Settings</a></p>
+                    </div>
+                    <div class="copyfoot text-center">
+                        <p>© Copyright <b>eStore.</b> All Rights Reserved.</p>
+                        <p>Designed by <span class="text-primary">Hariharan P</span></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
